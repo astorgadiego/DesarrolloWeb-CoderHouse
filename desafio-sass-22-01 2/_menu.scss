@@ -1,0 +1,21 @@
+@import"variables";
+
+body{
+    background-color: aquamarine;
+    .header__menu{
+        text-align: $alineacion;
+        list-style: none;
+        padding: 1rem;
+        li{
+            display: inline-block;
+            background-color: white;
+            margin: 1rem;
+        }
+        a{
+            text-decoration: none;
+            text-align: $alineacion;
+            text-transform: uppercase;
+            font-family: cursive;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+/*  PRIMERO TENES QUE LINKEAR EL ARCHIVO CSS AL INDEX*/
+#tabla1{
+    background-color: rgb(170, 95, 240);
+}
+.formulario{
+    background-color: coral;
+}
+
+ul{
+    list-style: none;
+    font-size: 20px;
+}
+
+li{
+    display: inline-block;
+    position: relative;
+}
+
+ul ul{ 
+    position: absolute;
+}
+
+ul ul li{
+    display: block;
+}
+
+ul li:hover ul{
+    display: block;
+}
+

@@ -1,0 +1,12 @@
+body{
+    background-color: aquamarine;
+}
+
+.bg-green{
+    background-color: green;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}

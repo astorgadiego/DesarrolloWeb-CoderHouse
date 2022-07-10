@@ -1,0 +1,11 @@
+@import "variables";
+.footer{
+    background-color: $color-footer;
+    text-align: center;
+    .footer__div{
+        margin: 2rem;
+        img{
+            margin: 0rem 4rem;
+        }
+    }
+}

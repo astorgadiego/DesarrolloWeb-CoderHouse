@@ -1,0 +1,25 @@
+a:hover{ 
+    font-weight:bold; 
+    background-color:blue; 
+    color:white; 
+        text-decoration:underline; 
+}
+a:link{
+     text-decoration:none; 
+    color:red; 
+}
+a:visited{ color:#999999; 
+}
+a:active{ 
+    background-color:yellow; 
+    color:black;
+ }
+
+
+ /*----APLICA PADDING A TODOS LOS DIV MENOS AL QUE TIENE LA CLASE "PADRE"----*/
+ div:not(.padre){
+    padding-left:40px;
+    padding-right:40px;
+}
+.padre div:nth-child(2){ font-weight:bold; color:orange; }
+

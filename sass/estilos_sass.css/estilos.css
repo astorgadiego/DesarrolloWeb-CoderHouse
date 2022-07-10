@@ -1,0 +1,33 @@
+.header__menu {
+  list-style: none;
+  padding: 0rem;
+}
+
+.header__menu li {
+  display: inline-block;
+}
+
+.header__menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: cursive;
+  font-size: 1rem;
+  color: white;
+  padding: 1rem;
+  background-color: cadetblue;
+}
+
+/*---FOOTER---*/
+.footer {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+
+/*CONTENIDO*/
+.section__contenido {
+  background-color: red;
+  text-align: center;
+}
+/*# sourceMappingURL=estilos.css.map */

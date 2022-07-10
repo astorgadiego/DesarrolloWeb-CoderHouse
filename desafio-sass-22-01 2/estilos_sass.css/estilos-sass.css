@@ -1,0 +1,53 @@
+/*---HEADER--*/
+body {
+  background-color: aquamarine;
+}
+
+body .header__menu {
+  text-align: center;
+  list-style: none;
+  padding: 1rem;
+}
+
+body .header__menu li {
+  display: inline-block;
+  background-color: white;
+  margin: 1rem;
+}
+
+body .header__menu a {
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: cursive;
+}
+
+.section {
+  background-color: chocolate;
+  color: black;
+  text-align: center;
+}
+
+.section div {
+  text-align: center;
+  margin: 2rem;
+}
+
+.section div img {
+  margin: 0rem 2rem;
+}
+
+/*--FOOTER--*/
+.footer {
+  background-color: green;
+  text-align: center;
+}
+
+.footer .footer__div {
+  margin: 2rem;
+}
+
+.footer .footer__div img {
+  margin: 0rem 4rem;
+}
+/*# sourceMappingURL=estilos-sass.css.map */

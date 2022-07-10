@@ -1,0 +1,106 @@
+div{
+    margin-top: 3rem;
+    a{
+        margin: 3rem;
+    }
+}
+
+/*---MAPS- CLASES DE LOS LINKS---*/
+$mapRedes: (facebook: blue, twitter: red, insta: orange);
+@each $red,$color in $mapRedes {
+    .#{$red}--link{
+        color: $color;
+    }
+}
+
+/*--MIXIN--*/
+
+@mixin mixin1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase
+}
+
+.clase_con_mixin{
+    @include mixin1;
+}
+
+/*--EXTEND--*/
+.extend_1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    text-align: right;
+    
+}
+
+.extend_2{
+    @extend .extend_1;
+    font-size: 3rem;
+    color: blue
+}
+
+/*----CLASES DE CONTENIDO--*/
+.header__lista li{
+    font-family: cursive;
+    list-style-type: none;
+     margin-right: 20px ;
+     display: inline-block;
+     margin-right: 80px;
+     background-color: hotpink;
+     padding: 13px;
+     }
+
+.header__titulo{
+    font-size: 60px;
+    text-decoration: underline;
+    color: black;
+}
+
+/*--EXTEND--*/
+.footer{
+    @extend .header__lista;
+}
+
+/*--MIXIN--*/
+@mixin mixin_sin_parametros {
+    background-color: khaki;
+    text-align: justify;
+    padding: 20px;
+    line-height: 1.8rem;
+    font-size: 20px;
+}
+
+.section{
+    @include mixin_sin_parametros();
+}
+
+@mixin mixin_parametros ($display, $height, $orientacion)
+{
+    display: $display;
+    width:$height;
+    image-orientation: $orientacion;
+    
+}
+
+.img{
+    margin-right: 1rem;
+    background-color: crimson;
+    @include mixin_parametros(flex ,100%,10rem);
+    flex-direction: column;
+    text-align: center;   
+    justify-content: flex-end; 
+}
+
+
+/*MAP GET--*/
+
+
+$mapgetcreditos: (tamano_de_fuente: 3rem, paddingg: 4rem);
+.credito{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    font-size: map-get($mapgetcreditos, tamano_de_fuente);
+    padding: map-get($mapgetcreditos , paddingg );
+}

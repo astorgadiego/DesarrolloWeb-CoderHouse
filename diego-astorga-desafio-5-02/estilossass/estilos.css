@@ -1,0 +1,99 @@
+div {
+  margin-top: 3rem;
+}
+
+div a {
+  margin: 3rem;
+}
+
+/*---MAPS- CLASES DE LOS LINKS---*/
+.facebook--link {
+  color: blue;
+}
+
+.twitter--link {
+  color: red;
+}
+
+.insta--link {
+  color: orange;
+}
+
+/*--MIXIN--*/
+.clase_con_mixin {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*--EXTEND--*/
+.extend_1, .extend_2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+  text-align: right;
+}
+
+.extend_2 {
+  font-size: 3rem;
+  color: blue;
+}
+
+/*----CLASES DE CONTENIDO--*/
+.header__lista li, .footer li {
+  font-family: cursive;
+  list-style-type: none;
+  margin-right: 20px;
+  display: inline-block;
+  margin-right: 80px;
+  background-color: hotpink;
+  padding: 13px;
+}
+
+.header__titulo {
+  font-size: 60px;
+  text-decoration: underline;
+  color: black;
+}
+
+/*--EXTEND--*/
+/*--MIXIN--*/
+.section {
+  background-color: khaki;
+  text-align: justify;
+  padding: 20px;
+  line-height: 1.8rem;
+  font-size: 20px;
+}
+
+.img {
+  margin-right: 1rem;
+  background-color: crimson;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  image-orientation: 10rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/*MAP GET--*/
+.credito {
+  background-color: aquamarine;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 3rem;
+  padding: 4rem;
+}
+/*# sourceMappingURL=estilos.css.map */

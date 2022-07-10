@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background-color: rgb(250, 110, 110);
+}
+/*
+.grid{
+    background-color: rgb(252, 196, 112);
+    display: inline-grid;
+    grid-template-columns: 250px    250px  250px 250px ;
+    grid-template-rows: 250px 250px;
+    border: 25px solid blueviolet;
+}
+
+.elemento{
+    background-color: cornflowerblue;
+    border: 1px solid  chartreuse;
+}
+
+*/
+
+
+
+#grilla2{
+    display: grid;
+    background-color: rgb(245, 126, 29);
+    grid-template-columns: 250px 20% 250px;
+    grid-template-rows: 100px;
+    grid-row-gap: 50px;
+    grid-column-gap: 50px;
+    border: 11px solid black;
+    height: 400px;
+    width: 800px;
+    margin: 30px;/*---MARGEN DE LA GRILLA DEL MARCO DE LA VENTANA  */
+    grid-template-areas: 
+    "nav header header"
+    "nav section aside"
+    "nav footer footer"
+}
+
+.border{
+    border: 1px solid black;
+    /*--margin-bottom: 30px;--- haces que el contenido no coincida con el borde del casillero--*/
+}
+
+header{
+    background-color: blue;
+    grid-area: header;
+}
+#productos{
+    border: 1px solid black;
+    background-color: darkturquoise;
+    grid-area: nav;
+}
+
+section#servicios{  /*CUANDO TENES UN ID TAMBIEN LO PODES LLAMAR "SECTION#NOMBRE DE ID"----*/
+    border: 1px solid black;
+    background-color: aquamarine;
+    grid-area: section;
+}
+
+aside{
+    background-color: darkgreen;
+    grid-area: aside;
+}
+
+
+footer{
+    background-color: white;
+    grid-area: footer;
+}
+
+
+/*----PARA TABLETAS---*/
+
+@media (min-width: 768px) {
+    body{
+        background-color: white;
+    }
+
+    #grilla2{
+        
+        border: 4px solid rgb(6, 124, 31);
+        background-color: rgb(253, 39, 139);
+        
+    }
+
+    .border{
+        background-color: rgb(122, 3, 151);
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    body{
+        background-color: plum;
+    }
+    #productos{
+        background-color: greenyellow;
+    }
+    
+}

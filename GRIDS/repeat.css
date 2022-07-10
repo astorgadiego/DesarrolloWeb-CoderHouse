@@ -1,0 +1,12 @@
+.grid{
+    display: grid;
+    border: 2px solid black;
+    grid-template-columns: repeat(8,2rem);
+    grid-template-rows: repeat(3,2rem);
+    
+    
+}
+
+.elemento{
+    border: 2px solid green;
+}
